@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (0.9.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - XNStatusBarHUD (0.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - MBProgressHUD
+  - SDWebImage
+  - XNStatusBarHUD (from `https://github.com/xunan623/XNStatusBarHUD.git`)
+
+EXTERNAL SOURCES:
+  XNStatusBarHUD:
+    :git: https://github.com/xunan623/XNStatusBarHUD.git
+
+CHECKOUT OPTIONS:
+  XNStatusBarHUD:
+    :commit: c2b3f731d158a9be646b8393178874a0bb817c5a
+    :git: https://github.com/xunan623/XNStatusBarHUD.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  XNStatusBarHUD: 1e665737e3ee18a835cd203b6ded827e891b9b49
+
+COCOAPODS: 0.39.0

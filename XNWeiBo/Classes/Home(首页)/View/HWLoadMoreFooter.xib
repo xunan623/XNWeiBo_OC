@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HWLoadMoreFooter">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-3V-k7S">
+                    <rect key="frame" x="363" y="9" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="2vM-qw-JrP"/>
+                        <constraint firstAttribute="width" constant="20" id="3O3-oQ-5td"/>
+                        <constraint firstAttribute="height" constant="20" id="Mju-IB-hEK"/>
+                        <constraint firstAttribute="width" constant="20" id="hdG-tj-mXx"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="i2T-v3-HFe"/>
+                        <constraint firstAttribute="height" constant="20" id="owq-20-Owx"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3O3-oQ-5td"/>
+                            <exclude reference="Mju-IB-hEK"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="2vM-qw-JrP"/>
+                            <include reference="3O3-oQ-5td"/>
+                            <include reference="Mju-IB-hEK"/>
+                            <exclude reference="hdG-tj-mXx"/>
+                            <exclude reference="i2T-v3-HFe"/>
+                            <exclude reference="owq-20-Owx"/>
+                        </mask>
+                    </variation>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-xD-rsN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="WO6-OR-F0A"/>
+                        <constraint firstAttribute="height" constant="35" id="XGZ-Ek-12r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="WO6-OR-F0A"/>
+                            <exclude reference="XGZ-Ek-12r"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VUH-xD-rsN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="25A-ER-aAn"/>
+                <constraint firstAttribute="trailingMargin" secondItem="MaR-3V-k7S" secondAttribute="trailing" constant="209" id="APl-in-tRp"/>
+                <constraint firstAttribute="trailing" secondItem="VUH-xD-rsN" secondAttribute="trailing" id="AXK-sO-iTu"/>
+                <constraint firstItem="VUH-xD-rsN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EAB-Ad-A9X"/>
+                <constraint firstItem="MaR-3V-k7S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="355" id="Fhb-jX-sGY"/>
+                <constraint firstItem="VUH-xD-rsN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OBj-jW-3Qv"/>
+                <constraint firstItem="MaR-3V-k7S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="1" id="OcU-9A-Feb"/>
+                <constraint firstAttribute="bottom" secondItem="VUH-xD-rsN" secondAttribute="bottom" id="Pqi-2X-ct5"/>
+                <constraint firstItem="MaR-3V-k7S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="R78-Va-Isl"/>
+                <constraint firstAttribute="trailing" secondItem="MaR-3V-k7S" secondAttribute="trailing" constant="125" id="dwv-ek-Nzv"/>
+                <constraint firstItem="VUH-xD-rsN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jlr-8c-3v0"/>
+                <constraint firstItem="MaR-3V-k7S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="lbw-TX-EWU"/>
+                <constraint firstAttribute="bottom" secondItem="VUH-xD-rsN" secondAttribute="bottom" id="uX5-n4-aj4"/>
+                <constraint firstAttribute="trailing" secondItem="VUH-xD-rsN" secondAttribute="trailing" id="wbk-Oe-qUL"/>
+                <constraint firstItem="MaR-3V-k7S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="255" id="xt0-x3-JLp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="25A-ER-aAn"/>
+                    <exclude reference="AXK-sO-iTu"/>
+                    <exclude reference="jlr-8c-3v0"/>
+                    <exclude reference="uX5-n4-aj4"/>
+                    <exclude reference="R78-Va-Isl"/>
+                    <exclude reference="dwv-ek-Nzv"/>
+                    <exclude reference="lbw-TX-EWU"/>
+                    <exclude reference="xt0-x3-JLp"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="25A-ER-aAn"/>
+                    <include reference="AXK-sO-iTu"/>
+                    <exclude reference="EAB-Ad-A9X"/>
+                    <exclude reference="OBj-jW-3Qv"/>
+                    <exclude reference="Pqi-2X-ct5"/>
+                    <include reference="jlr-8c-3v0"/>
+                    <include reference="uX5-n4-aj4"/>
+                    <exclude reference="wbk-Oe-qUL"/>
+                    <exclude reference="APl-in-tRp"/>
+                    <exclude reference="Fhb-jX-sGY"/>
+                    <exclude reference="OcU-9A-Feb"/>
+                    <include reference="R78-Va-Isl"/>
+                    <include reference="dwv-ek-Nzv"/>
+                    <include reference="lbw-TX-EWU"/>
+                    <include reference="xt0-x3-JLp"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="472" y="253.5"/>
+        </view>
+    </objects>
+</document>

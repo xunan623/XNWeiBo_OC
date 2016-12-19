@@ -1,0 +1,49 @@
+//
+//  info.pch
+//  XNWeiBo
+//
+//  Created by 许楠 on 15/9/5.
+//  Copyright (c) 2015年 CLT. All rights reserved.
+//
+
+#ifndef XNWeiBo_info_pch
+#define XNWeiBo_info_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef DEBUG //处于开发阶段
+
+#define HWLog(...) NSLog(__VA_ARGS__)
+
+#else //处于发布阶段
+
+#define HWLog(...)
+
+#endif
+
+#define XNRadColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define rgb(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define HWTextColor [UIColor colorWithRed:129/255.0 green:129/255.0 blue:129/255.0 alpha:1]
+#define HWStatusPhotoWH 80
+#define HWStatusPhotoMargin 10
+#define HWNotificationCenter [NSNotificationCenter defaultCenter]
+// 表情选中的通知
+#define HWEmotionDidSelectNotification @"HWEmotionDidSelectNotification"
+#define HWEmotionDidSelectKey @"selectedEmotion"
+// 删除按钮
+#define HWEmotionDeleteNotification @"HWEmotionDelegateNotification"
+
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import <MBProgressHUD.h>
+#import "UIWindow+Extension.h"
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+#import "NSString+Emoji.h"
+
+
+
+#endif
