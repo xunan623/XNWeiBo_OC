@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61049C13117C3D2DEEF045EF /* libPods-XNWeiBo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293025F4F8AB207AA11726D2 /* libPods-XNWeiBo.a */; };
 		71018E171C15D02500D50345 /* HWEmotionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71018E161C15D02500D50345 /* HWEmotionButton.m */; };
 		7102F2D21BBF9E780075D2DF /* HWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7102F2D11BBF9E780075D2DF /* HWAccount.m */; };
 		7102F2D61BBFD9AE0075D2DF /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7102F2D51BBFD9AE0075D2DF /* UIWindow+Extension.m */; };
@@ -97,6 +98,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293025F4F8AB207AA11726D2 /* libPods-XNWeiBo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XNWeiBo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B3E8171555B2CBEC2A6360 /* Pods-XNWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNWeiBo/Pods-XNWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		71018E151C15D02500D50345 /* HWEmotionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEmotionButton.h; sourceTree = "<group>"; };
 		71018E161C15D02500D50345 /* HWEmotionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEmotionButton.m; sourceTree = "<group>"; };
 		7102F2D01BBF9E780075D2DF /* HWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAccount.h; sourceTree = "<group>"; };
@@ -244,6 +247,7 @@
 		71FC9C661BC8DAAC000152D0 /* HWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPhoto.h; sourceTree = "<group>"; };
 		71FC9C671BC8DAAC000152D0 /* HWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPhoto.m; sourceTree = "<group>"; };
 		71FD208B1BAAABE1001A2390 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		77D183E5862B49EFD8890220 /* Pods-XNWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XNWeiBo/Pods-XNWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,7 @@
 				716F6D8F1BAAAD390046C17F /* SystemConfiguration.framework in Frameworks */,
 				716F6D8D1BAAAD240046C17F /* Security.framework in Frameworks */,
 				71FD208C1BAAABE1001A2390 /* MobileCoreServices.framework in Frameworks */,
+				61049C13117C3D2DEEF045EF /* libPods-XNWeiBo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +272,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06DA2CC3303BF61A1DF80411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				293025F4F8AB207AA11726D2 /* libPods-XNWeiBo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7102F2D31BBFD9460075D2DF /* Categary */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +318,8 @@
 				711631721B9B0B7300C9C9D0 /* XNWeiBo */,
 				7116318C1B9B0B7300C9C9D0 /* XNWeiBoTests */,
 				711631711B9B0B7300C9C9D0 /* Products */,
+				F25FEDF655AA86744C478B9D /* Pods */,
+				06DA2CC3303BF61A1DF80411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -748,6 +763,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		F25FEDF655AA86744C478B9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D183E5862B49EFD8890220 /* Pods-XNWeiBo.debug.xcconfig */,
+				53B3E8171555B2CBEC2A6360 /* Pods-XNWeiBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -755,9 +779,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 711631931B9B0B7300C9C9D0 /* Build configuration list for PBXNativeTarget "XNWeiBo" */;
 			buildPhases = (
+				4AA106BDF29F864323EFA392 /* [CP] Check Pods Manifest.lock */,
 				7116316C1B9B0B7300C9C9D0 /* Sources */,
 				7116316D1B9B0B7300C9C9D0 /* Frameworks */,
 				7116316E1B9B0B7300C9C9D0 /* Resources */,
+				26EB196D7BD12DEB2583443C /* [CP] Embed Pods Frameworks */,
+				A0BCEB865D6EDAE5165A03CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -847,6 +874,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26EB196D7BD12DEB2583443C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNWeiBo/Pods-XNWeiBo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA106BDF29F864323EFA392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0BCEB865D6EDAE5165A03CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNWeiBo/Pods-XNWeiBo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7116316C1B9B0B7300C9C9D0 /* Sources */ = {
@@ -1023,6 +1098,7 @@
 		};
 		711631941B9B0B7300C9C9D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D183E5862B49EFD8890220 /* Pods-XNWeiBo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1043,6 +1119,7 @@
 		};
 		711631951B9B0B7300C9C9D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B3E8171555B2CBEC2A6360 /* Pods-XNWeiBo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

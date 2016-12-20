@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XNWeiBo/Classes/Home(&#x9996;&#x9875;)/Controller/HWHomeViewController.m"
-            timestampString = "489565006.108618"
+            timestampString = "503892735.929643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "344"
-            endingLineNumber = "344"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "-setupUserInfo"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XNWeiBo/Classes/Home(&#x9996;&#x9875;)/Controller/HWHomeViewController.m"
-            timestampString = "489565006.108618"
+            timestampString = "503892735.929643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XNWeiBo/Classes/Home(&#x9996;&#x9875;)/Controller/HWHomeViewController.m"
-            timestampString = "489565006.108618"
+            timestampString = "503892735.929643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "-loadNewStatus"
             landmarkType = "7">
          </BreakpointContent>
